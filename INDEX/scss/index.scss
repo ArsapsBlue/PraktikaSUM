@@ -1,0 +1,226 @@
+@import '_other.scss';
+@import '_mainsource.scss';
+
+
+
+
+.mainSlider {
+    height: 39.4rem;
+    margin: 13.3rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 35.5rem;
+        width: 100%;
+        .sliderTextblock{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 2rem;
+            .sliderTextblockMain {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 92.9rem;
+                height: 26.9rem;
+                font-weight: 500;
+                .H {
+                    margin-bottom: 5rem;
+                    font-size: 5.5rem;
+                }
+                .P {
+                    font-size: 3.6rem;
+                }
+            }
+            .sliderTextblockA {
+                width: 92.9rem;
+                height: 3.8rem;
+                text-align: right;
+                //float: right;
+                font-size: 2.4rem;
+                text-decoration: underline;
+            }
+        }
+
+        img {
+            width: 44.2rem;
+        }
+    }
+
+    .sliderStatusbar {
+        height: 1rem;
+    }
+}
+
+.searchBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 9rem auto;
+
+    .searchBlockGeneral {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 3.6rem;
+        font-weight: 500;
+        width: 121.1rem;
+        input {
+            width: 93.8rem;
+            height: 3.6rem;
+            font-size: 3.6rem;
+            font-weight: 500;
+        }
+
+        input:focus{
+            outline: none;
+            
+        }
+
+        img {
+            height: 2.5rem;
+            align-self: flex-start;
+        }
+    }
+    .searchBlockLocation {
+        font-size: 3rem;
+        width: 16.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            margin-right: 1.8rem;
+            height: 2.5rem;
+            align-self: flex-start; 
+        }
+    }
+}
+
+.categoryBlock {
+    height: 20.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    .categoryBlockColumn {
+        display: flex;
+        //justify-content: flex-start;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 21rem;
+        height: 100%;
+        a {
+            //margin-bottom: 4.3rem;
+            font-size: 3rem;
+        }
+    }
+}
+
+.storiesBlock {
+    height: 38rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 11.7rem auto;
+    .storiesBlockGeneral {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 27rem;
+        .storiesBlockOne {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 27rem;
+            width: 45rem;
+            border: 2px #8b424c solid;
+            border-radius: 20px;
+            padding: 3.2rem;
+            color: #8b424c;
+            font-size: 3rem;
+            font-weight: 600;
+            img {
+                height: 10rem;
+            }
+        }
+    }
+    .H {
+        font-size: 4.8rem;
+        font-weight: 800;
+    }
+}
+
+.articlesBlock {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 93.6rem;
+    .articlesBlockGeneral {
+        display: grid;
+        grid-template-columns: 74.3rem 74.3rem;
+        grid-column-gap: 2.7rem;
+        grid-row-gap: 2.7em;
+        width: 100%;
+        height: 81.6rem;
+        .articlesBlockOne {
+            //width: 74.3rem;
+            height: 39.1rem;
+            padding: 7.6rem;
+            background-color: #fff;           
+            box-shadow: 0px 0px 21px rgba(0,0,0,0.09);
+            border-radius: 20px;
+            .articlesBlockOneText {
+                
+                float: right;
+                text-align: right;
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                align-items: flex-end;
+                height: 100%;
+                width: 32rem;
+                .H {
+                    font-size: 3rem;
+                    font-weight: 500;
+                    margin-bottom: 5rem;
+                }
+                .P {
+                    font-size: 2.4rem;
+                }
+            }
+            img {
+                max-height: 32.5rem;
+                max-width: 32rem;
+                align-self: flex-end;
+                justify-self: flex-end;
+            }
+        }
+        @for $i from 1 to 5 {
+            #article#{$i} {
+                background: url('./img/article#{$i}.png') no-repeat;
+                background-size: 33.5rem;
+                background-position: left bottom;
+            }
+          }
+
+
+
+
+
+    }
+
+}
+

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    font-family: 'Golos Text', sans-serif;
+    box-sizing: border-box;
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    input {
+        border-bottom: 1px solid #7c7c7c;
+    }
+}
+
+html {
+    font-size: 8px;
+}
+
+.mainContainer {
+    width: 149.2rem;
+}
+
+.Hs1 {
+    font-size: 4.8rem;
+    font-weight: 800;
+    margin-bottom: 7.7rem;
+}
+
+header {
+    font-size: 2.4rem;
+    height: 10.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    .logo {
+        width: 22.5rem;
+    }
+    .headerButtons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 48.9rem;
+        .headerButtonsSmall {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 19.0rem;
+            img {
+                height: 2.4rem;
+            }
+        }
+        .headerButtonsAvatar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 17.2rem;
+            img {
+                width: 5rem;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 13.2rem;
+    height: 13.2rem;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mainContainer {
+        height: 7.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .creditsAndDesc {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            text-align: right;
+            flex-direction: column;
+            width: 31.5rem;
+            height: 100%;
+            font-size: 1.8rem;
+            span {
+                color: #989898;
+            }
+            a {
+                color: #000;
+            }
+        }
+        .social {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 14.9rem;
+            img {
+                height: 3.4rem;
+            }
+        }
+    }
+}

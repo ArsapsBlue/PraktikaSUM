@@ -1,0 +1,189 @@
+.pomoguColor, .activeColor {
+  color: #8b424c;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  font-family: "Golos Text", sans-serif;
+  box-sizing: border-box;
+}
+* a {
+  color: #000;
+  text-decoration: none;
+}
+* input {
+  border-bottom: 1px solid #7c7c7c;
+}
+
+html {
+  font-size: 8px;
+}
+
+.mainContainer {
+  width: 149.2rem;
+}
+
+.Hs1 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  margin-bottom: 7.7rem;
+}
+
+header {
+  font-size: 2.4rem;
+  height: 10.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header .logo {
+  width: 22.5rem;
+}
+header .headerButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 48.9rem;
+}
+header .headerButtons .headerButtonsSmall {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 19rem;
+}
+header .headerButtons .headerButtonsSmall img {
+  height: 2.4rem;
+}
+header .headerButtons .headerButtonsAvatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 17.2rem;
+}
+header .headerButtons .headerButtonsAvatar img {
+  width: 5rem;
+}
+
+footer {
+  margin-top: 13.2rem;
+  height: 13.2rem;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .mainContainer {
+  height: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .mainContainer .creditsAndDesc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+  flex-direction: column;
+  width: 31.5rem;
+  height: 100%;
+  font-size: 1.8rem;
+}
+footer .mainContainer .creditsAndDesc span {
+  color: #989898;
+}
+footer .mainContainer .creditsAndDesc a {
+  color: #000;
+}
+footer .mainContainer .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 14.9rem;
+}
+footer .mainContainer .social img {
+  height: 3.4rem;
+}
+
+.catDescBlock {
+  margin: 9.8rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35.5rem;
+}
+.catDescBlock .textBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 91.2rem;
+  height: 100%;
+}
+.catDescBlock .textBlock .P {
+  font-size: 3rem;
+}
+.catDescBlock img {
+  border-radius: 20px;
+  height: 100%;
+}
+
+.resultsBlock {
+  margin: 7.8rem auto;
+}
+.resultsBlock .resultsBlockMainpart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 8.8rem;
+  margin-bottom: 3.4rem;
+}
+.resultsBlock .resultsBlockMainpart .sort {
+  width: 57.6rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resultsBlock .resultsBlockMainpart .sort span, .resultsBlock .resultsBlockMainpart .sort button {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.resultsBlock .resultsBlockMainpart .sort img {
+  margin-left: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+.resultsBlock .resultsBlockMainpart span.H {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.resultsBlock .resultsBlockListAndFilters {
+  display: grid;
+  grid-template-columns: 91.2rem 48.9rem;
+  grid-column-gap: 9rem;
+}
+.resultsBlock .resultsBlockListAndFilters .resList .resOne {
+  width: 100%;
+  height: 37.8rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  margin-bottom: 4.7rem;
+}
+.resultsBlock .resultsBlockListAndFilters .filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 57rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+}
+.resultsBlock .resultsBlockListAndFilters .filters span.M {
+  font-weight: 500;
+  font-size: 1.8rem;
+}/*# sourceMappingURL=psy.css.map */
