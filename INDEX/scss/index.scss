@@ -2,21 +2,41 @@
 @import '_mainsource.scss';
 
 
-
-
 .mainSlider {
     height: 39.4rem;
+    background-color: #fff;
     margin: 13.3rem auto 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    @media screen and (max-width: 80*8px) {
+        display: none;
+    }
+    @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
+        margin: 9rem auto 0;
+    }
+    @media screen and (max-width: 110*8px) and (min-width: 80*8px) {
+        margin: 4rem auto 0;
+    }
+    
+    //display: flex;
+    //justify-content: space-between;
+    //align-items: center;
+    //flex-direction: column;
+    .sliderMech {
+       // display: flex;
+       // justify-content: flex-start;
+        //align-items: center;
+        //height: 35.5rem;
+        //width: 100%;
+        background-color: #fff;
+    }
     .slider {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 35.5rem;
         width: 100%;
+        background-color: #fff;
+
+        
         .sliderTextblock{
             display: flex;
             justify-content: space-between;
@@ -31,6 +51,34 @@
                 width: 92.9rem;
                 height: 26.9rem;
                 font-weight: 500;
+
+                @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
+                    width: 63rem;
+                    margin-left: 5rem;
+                    //margin-top: 1rem;
+                    //height: 35rem;
+                    .H {
+                        font-size: 4rem !important;
+                        margin-bottom: 2rem !important; 
+                    }
+                    .P {
+                        font-size: 3rem !important;
+                    }
+                }
+                
+                @media screen and (max-width: 110*8px) and (min-width: 80*8px) {
+                    margin-left: 3rem;
+                    width: 40rem;
+                    height: 25rem;
+                    .H {
+                        font-size: 3.7rem !important;
+                        margin-bottom: 2rem !important;
+                    }
+                    .P {
+                        font-size: 2.5rem !important;
+                    }
+                }
+
                 .H {
                     margin-bottom: 5rem;
                     font-size: 5.5rem;
@@ -40,6 +88,21 @@
                 }
             }
             .sliderTextblockA {
+                @media screen and (max-width: 154.1*8px) {
+                    font-size: 2rem;
+                }
+                @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
+                    width: 65rem;
+                    font-size: 2rem;
+                    //margin-bottom: -4rem;
+                }
+                @media screen and (max-width: 110*8px) and (min-width: 80*8px) {
+                    width: 42rem;
+                    //margin-bottom: -4rem;
+                }
+                position: fixed;
+                bottom: 5rem;
+                right: 0;
                 width: 92.9rem;
                 height: 3.8rem;
                 text-align: right;
@@ -50,13 +113,52 @@
         }
 
         img {
-            width: 44.2rem;
+            width: 44rem;
+            @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
+                width: 40rem;
+            }
+            @media screen and (max-width: 110*8px) and (min-width: 80*8px) {
+                width: 35rem;
+            }
         }
     }
 
     .sliderStatusbar {
-        height: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 74px;
+        height: 10px;
+        .sliderStatusbarDot {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #dadada;
+            transition: background-color ease-in 0.3s;
+        }
+        .dotOn {
+            background-color: #7c7c7c;
+        }
     }
+
+    .swiper-pagination {
+        bottom:0;
+        position: relative;
+    }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+        color: #fff !important;
+    }
+    
+    .swiper-pagination-bullet-active {
+       // width: 10px;
+        //height: 10px;
+        //line-height: 10px;
+        //font-size: 14px;
+        //border-radius: 5px;
+        background-color: #7c7c7c;
+    }
+
 }
 
 .searchBlock {
@@ -64,6 +166,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 9rem auto;
+    
 
     .searchBlockGeneral {
         display: flex;
@@ -72,24 +175,58 @@
         font-size: 3.6rem;
         font-weight: 500;
         width: 121.1rem;
+        @media screen and (max-width: 80*8px) {
+            span {
+            display: none;
+            }
+            width: 26rem;
+        }
+        @media screen and (max-width: 110*8px) and (min-width: 80*8px) {
+            width: 47rem;
+        }
+        @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
+            width: 77rem;
+        }
         input {
-            width: 93.8rem;
+
             height: 3.6rem;
             font-size: 3.6rem;
             font-weight: 500;
+            overflow-y: visible;
+        }
+        .inpSearch {
+            width: 93.8rem;
+            @media screen and (max-width: 80*8px) {
+                width: 19.7rem;
+            }
+            @media screen and (max-width: 110*8px) and (min-width: 80*8px) {
+                width: 19.7rem;
+            }
+            @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
+                width: 49.7rem;
+            }
         }
 
         input:focus{
             outline: none;
+            overflow-y: visible;
             
         }
 
-        img {
-            height: 2.5rem;
+        input[type="submit"] {
+
+            height: 25px;
+            width: 25px;
             align-self: flex-start;
+            background: url('img/search.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+            border: none;
         }
+
     }
     .searchBlockLocation {
+        margin-right: 4rem;
         font-size: 3rem;
         width: 16.1rem;
         display: flex;
@@ -121,11 +258,28 @@
             //margin-bottom: 4.3rem;
             font-size: 3rem;
         }
+    }   
+}
+
+@media screen and (max-width: 110*8px) and (min-width: 80*8px) {
+    .categoryBlockColumn:nth-child(1) {
+        display: none;
     }
 }
 
+@media screen and (max-width: 80*8px)  {
+    .categoryBlockColumn:nth-child(1) {
+        display: none;
+    }
+    .categoryBlockColumn:nth-child(5) {
+        display: none;
+    }
+}
+
+
+
 .storiesBlock {
-    height: 38rem;
+    //height: 38rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -136,8 +290,19 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 27rem;
+        @media screen and (max-width: 110*8px) {
+            flex-direction: column;
+            .storiesBlockOne {
+                margin-bottom: 3.5rem;
+            }
+        }
+        @media screen and (max-width: 80*8px) {
+            align-items: flex-start;
+        }
+
+        //height: 27rem;
         .storiesBlockOne {
+            cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
@@ -150,10 +315,90 @@
             color: #8b424c;
             font-size: 3rem;
             font-weight: 600;
+            text-align: left;
+            @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
+                    height: 32rem;
+                    width: 35rem;
+            }
+            @media screen and (max-width: 80*8px) {
+                width: 54rem;
+            }
+
             img {
                 height: 10rem;
             }
+
+            dialog::backdrop {
+                background: rgba(0,0,0,0.6);
+            }
+            dialog:focus {
+                outline: none;
+            }
+
+            .storyContainer {
+                display: flex;
+                width: 100%;
+                height: 100%;
+            }
+
+            .storyDialog {
+                .storySwiperGeneral {
+                    position:fixed;
+                left: 50%;
+                top: 50%;
+                -ms-transform: translate(-50%,-50%);
+                -moz-transform:translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                 transform: translate(-50%,-50%);
+                width: 45+20*2rem;
+                height: 70+20*2rem;
+                border: 10rem transparent;
+                //overflow: hidden;
+                padding: 20rem;
+
+                //overflow: hidden;
+                }
+
+                    .swiper-container {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        //overflow: hidden;
+                    
+                    }
+                    .swiper-wrapper {
+                        width: 100%;
+                        height: 100%;
+                       // overflow: hidden;
+                       // background-color: #fff;
+                        .swiper-slide {
+
+                            background-color: #fff;
+                            overflow: hidden;
+                            width: 45rem;
+                height: 70rem;
+                background: #fff;
+                border: 2px solid #8b424c;
+                border-radius: 20px;
+                        }
+                    }
+                    .swiper-pagination {
+
+                    }
+            }
+
+
+
+            #story1 {
+
+            }
+
         }
+        button:focus {
+            outline: none;
+        }
+
     }
     .H {
         font-size: 4.8rem;
@@ -161,27 +406,42 @@
     }
 }
 
+
+
 .articlesBlock {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     margin: 0 auto;
-    height: 93.6rem;
+    
     .articlesBlockGeneral {
+        margin: 0 auto;
         display: grid;
-        grid-template-columns: 74.3rem 74.3rem;
+       // grid-template-columns: 74.3rem 74.3rem;
+       grid-template-columns: repeat(auto-fill, minmax(50rem, 72.3rem));
         grid-column-gap: 2.7rem;
-        grid-row-gap: 2.7em;
+        grid-auto-rows: 39.1rem;
+        grid-row-gap: 2.7rem;
+        justify-content: center;
+        @media screen and (max-width: 80*8px) {
+            justify-content: flex-start;
+        }
+        //grid-auto-flow: column;
         width: 100%;
-        height: 81.6rem;
         .articlesBlockOne {
+            @media screen and (max-width: 80*8px) {
+                width: 60;;
+            }
             //width: 74.3rem;
             height: 39.1rem;
             padding: 7.6rem;
             background-color: #fff;           
             box-shadow: 0px 0px 21px rgba(0,0,0,0.09);
             border-radius: 20px;
+            @media screen and (max-width: 80*8px) {
+                padding: 4rem 4rem 8rem 4rem;
+            }
             .articlesBlockOneText {
                 
                 float: right;
@@ -192,6 +452,31 @@
                 align-items: flex-end;
                 height: 100%;
                 width: 32rem;
+                text-shadow: 
+                    -0   -2px 3px #FFFFFF,
+                    0   -2px 3px #FFFFFF,
+                   -0    2px 3px #FFFFFF,
+                    0    2px 3px #FFFFFF,
+                   -2px -0   3px #FFFFFF,
+                    2px -0   3px #FFFFFF,
+                   -2px  0   3px #FFFFFF,
+                    2px  0   3px #FFFFFF,
+                   -1px -2px 3px #FFFFFF,
+                    1px -2px 3px #FFFFFF,
+                   -1px  2px 3px #FFFFFF,
+                    1px  2px 3px #FFFFFF,
+                   -2px -1px 3px #FFFFFF,
+                    2px -1px 3px #FFFFFF,
+                   -2px  1px 3px #FFFFFF,
+                    2px  1px 3px #FFFFFF,
+                   -2px -2px 3px #FFFFFF,
+                    2px -2px 3px #FFFFFF,
+                   -2px  2px 3px #FFFFFF,
+                    2px  2px 3px #FFFFFF,
+                   -2px -2px 3px #FFFFFF,
+                    2px -2px 3px #FFFFFF,
+                   -2px  2px 3px #FFFFFF,
+                    2px  2px 3px #FFFFFF;
                 .H {
                     font-size: 3rem;
                     font-weight: 500;
@@ -199,6 +484,7 @@
                 }
                 .P {
                     font-size: 2.4rem;
+                    
                 }
             }
             img {
@@ -214,6 +500,7 @@
                 background-size: 33.5rem;
                 background-position: left bottom;
             }
+
           }
 
 

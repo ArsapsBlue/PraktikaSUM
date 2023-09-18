@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Помогу</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <title>Помогу — бесплатные объявления</title>
 </head>
 <body>
     <header class="mainContainer">
-        <a href=""><img src="img/logo.png" alt="Помогу" class="logo"></a>
+        <a href="index.html"><img src="img/logo.png" alt="Помогу" class="logo"></a>
         <div class="headerButtons">
             <div class="headerButtonsSmall">
                 <a href=""><img src="img/search.png" alt="Поиск"></a>
@@ -25,26 +28,83 @@
             </div> 
         </div>
     </header>
-    <div class="mainSlider mainContainer">
-        <div class="slider">
-            <img src="img/slider1.png" alt="">
-            <div class="sliderTextblock">
-                <div class="sliderTextblockMain">
-                    <span class="H">Тяжело на душе?</span>
-                    <span class="P">Дам поддержку и понимание в сложный период жизни и <span class="pomoguColor">помогу</span> найти себя, понять и принять свои чувства.</span>
-                </div>
-                <div class="sliderTextblockA">
-                    <a href="#">Психологи на Помогу</a>
+    <div class="mainSlider mainContainer swiper-container">
+        <div class="sliderMech swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slider">
+                    <img src="img/slider1.png" alt="">
+                    <div class="sliderTextblock">
+                        <div class="sliderTextblockMain">
+                            <span class="H">Тяжело на душе?</span>
+                            <span class="P">Дам поддержку и понимание в сложный период жизни и <span class="pomoguColor">помогу</span> найти себя, понять и принять свои чувства.</span>
+                        </div>
+                        <div class="sliderTextblockA">
+                            <a href="#">Психологи на Помогу</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="swiper-slide">
+                <div class="slider">
+                    <img src="img/slider1.png" alt="">
+                    <div class="sliderTextblock">
+                        <div class="sliderTextblockMain">
+                            <span class="H">Лень тащить тяжести?</span>
+                            <span class="P">Дам поддержку и понимание в сложный период жизни и <span class="pomoguColor">помогу</span> найти себя, понять и принять свои чувства.</span>
+                        </div>
+                        <div class="sliderTextblockA">
+                            <a href="#">Психологи на Помогу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider">
+                    <img src="img/slider1.png" alt="">
+                    <div class="sliderTextblock">
+                        <div class="sliderTextblockMain">
+                            <span class="H">Не с кем оставить ребенка?</span>
+                            <span class="P">Дам поддержку и понимание в сложный период жизни и <span class="pomoguColor">помогу</span> найти себя, понять и принять свои чувства.</span>
+                        </div>
+                        <div class="sliderTextblockA">
+                            <a href="#">Психологи на Помогу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider">
+                    <img src="img/slider1.png" alt="">
+                    <div class="sliderTextblock">
+                        <div class="sliderTextblockMain">
+                            <span class="H">Сломалась стиральная машина?</span>
+                            <span class="P">Дам поддержку и понимание в сложный период жизни и <span class="pomoguColor">помогу</span> найти себя, понять и принять свои чувства.</span>
+                        </div>
+                        <div class="sliderTextblockA">
+                            <a href="#">Психологи на Помогу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-        <img src="img/sliderStatusbar.png" alt="" class="sliderStatusbar">
+        <div class="swiper-pagination">
+
+        </div>
+        <!--<div class="sliderStatusbar">
+            <div class="sliderStatusbarDot dotOn"></div>
+            <div class="sliderStatusbarDot"></div>
+            <div class="sliderStatusbarDot"></div>
+            <div class="sliderStatusbarDot"></div>
+            <div class="sliderStatusbarDot"></div>
+        </div>-->
     </div>
+    
     <div class="searchBlock mainContainer">
         <div class="searchBlockGeneral">
             <span><span class="pomoguColor">Помогу</span> c</span>
-            <input type="search">
-            <button><img src="img/search.png" alt=""></button>
+            <input type="search" class="inpSearch">
+            <input type="submit" value="">
         </div>
         <div class="searchBlockLocation">
             <a href=""><img src="img/location.png" alt=""></a>
@@ -61,19 +121,32 @@
     <div class="storiesBlock mainContainer">
         <span class="Hs1">Помощь</span>
         <div class="storiesBlockGeneral">
-            <a href=""><div class="storiesBlockOne">
+            <button type="button" onclick="window.story1.showModal(); swiper2.enable();"><div class="storiesBlockOne">
                 <img src="img/story1.png" alt="">
                 <span>Выставить объявления</span>
-            </div>
-            </a>
-            <a href=""><div class="storiesBlockOne">
+                <dialog id="story1">
+                    <div class="storyDialog">
+                        <div class="swiper-container storySwiper1 storySwiperGeneral">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-wrapper">
+                                <div class="storyDialogPage swiper-slide"> grgrwgwg<br>grgrwgwg<br>grgrwgwg<br></div>
+                                <div class="storyDialogPage swiper-slide"> g2ggrgrwgwg<br>grgrwgwg<br> </div>
+                                <div class="storyDialogPage swiper-slide">g 2 2 24grgrwgwg<br>grgrwgwg<br></div>                          
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>    
+                    </div>
+                </dialog>
+            </div></button>
+            <div class="storiesBlockOne">
                 <img src="img/story2.png" alt="">
                 <span>Найти подходящего исполнителя</span>
-            </div></a>
-            <a href=""> <div class="storiesBlockOne">
+            </div>
+            <div class="storiesBlockOne">
                 <img src="img/story3.png" alt="">
                 <span>Получить отклики</span>
-            </div></a>
+            </div>
         </div>
     </div>
     <div class="articlesBlock mainContainer">
@@ -113,7 +186,10 @@
                 <a href="">Подробнее о проекте</a>
             </div>
         </div>
+
     </footer>
+    <script src="mainSlider.js"></script>
+    <script src="storySlider.js"></script>
 </body>
 </html>
 

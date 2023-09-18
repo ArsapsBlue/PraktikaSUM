@@ -6,21 +6,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 35.5rem;
+    //height: 35.5rem;
     .textBlock {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         flex-direction: column;
-        width: 91.2rem;
+        margin-right: 11rem;
+        //width: 91.2rem;
         height: 100%;
         .P {
             font-size: 3rem;
         }
+    
+        @media screen and (max-width: 154.1*8px) {
+            .P {
+                font-size: 2.4rem;
+            }
+            .Hs1 {
+                font-size: 4rem;
+            }
+        }
+
+
+
     }
     img {
         border-radius: 20px;
         height: 100%;
+        @media screen and (max-width: 110*8px) {
+            height: 27rem;
+        }
     }
 }
 
@@ -51,6 +67,7 @@
         span.H {
             font-size: 3rem;
             font-weight: 800;
+            margin-bottom: 2rem;
         }
     }
 
@@ -59,25 +76,121 @@
         display: grid;
         grid-template-columns: 91.2rem 48.9rem;
         grid-column-gap: 9rem;
+        @media screen and (max-width: 154.1*8px) {
+            grid-template-columns: 81.2rem 48.9rem;
+        }
         .resList {
             .resOne {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 width: 100%;
-                height: 37.8rem;
+                height: 33.5rem;
                 background-color: #fff;           
                 box-shadow: 0px 0px 21px rgba(0,0,0,0.09);
                 border-radius: 20px;
                 margin-bottom: 4.7rem;
+                padding: 4rem;
+
+                img {
+                    width: 18.1rem;
+                    @media screen and (max-width: 154.1*8px) {
+                        width: 10rem;
+                    }
+                }
+                .resOneTextBlock {
+                    margin-top: 4.7rem;
+                    display: flex;
+                    //justify-content: space-between;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    width: 50rem;
+                    height: 32.1rem;
+                    .H {
+                        position: relative;
+                        font-size: 3.6rem;
+                        font-weight: 500;
+                        height: 3.6rem;
+                    }
+                    .rating {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 22.5rem;
+                        height: 8rem;
+                        .score {
+                            width: 8rem;
+                            height: 8rem;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            span {
+                                font-size: 2.4rem;
+                                font-weight: 500;
+                            }
+                            img {
+                                height: 2.5rem;
+                                width: 2.5rem;
+                            }
+                        }
+                        span {
+                            font-size: 1.8rem;
+                            font-weight: 500;
+                        }
+                    }
+                    .desc {
+                        height: 14rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        .descRow {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: 1.8rem;
+                            font-weight: 500;
+                            span {
+                                align-self: flex-start;
+                                text-align: right;
+                            }
+                            span.descRowName {
+                                font-weight: 800;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+                button {
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    align-self: flex-start;
+                    img {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                    }
+                }
             }
         }
+        .resList:nth-child(1) {
+            margin-top: 4rem;
+        }
         .filters {
+        // ВРЕМЕННО СКРЫТ
+        * {
+            color:transparent;
+            background-color: transparent !important;
+        }
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         flex-direction: column;
         height: 57rem;
-        background-color: #fff;           
-        box-shadow: 0px 0px 21px rgba(0,0,0,0.09);
-        border-radius: 20px;
+        //background-color: #fff;           
+        //box-shadow: 0px 0px 21px rgba(0,0,0,0.09);
+        //border-radius: 20px;
         span.M {
             font-weight: 500;
             font-size: 1.8rem;

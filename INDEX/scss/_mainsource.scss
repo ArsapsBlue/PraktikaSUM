@@ -12,15 +12,42 @@
     input {
         border-bottom: 1px solid #7c7c7c;
     }
+    input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+    input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 html {
     font-size: 8px;
+
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .mainContainer {
     width: 149.2rem;
+    @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
+        width: 110rem;
+    }
+    
+    @media screen and (max-width: 110*8px) and (min-width: 80*8px) {
+        width: 80rem;
+
+    }
+    
+    @media screen and (max-width: 80*8px) and (min-width: 54*8px) {
+        width: 54rem;
+    }
+    
+    
 }
+
+
 
 .Hs1 {
     font-size: 4.8rem;
@@ -39,15 +66,23 @@ header {
         width: 22.5rem;
     }
     .headerButtons {
+        margin-top: 0.6rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 48.9rem;
+        @media screen and (max-width: 110*8px) {
+            width: 25.7rem;
+        }
+
         .headerButtonsSmall {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 19.0rem;
+            @media screen and (max-width: 110*8px) {
+                width: 17rem;
+            }
             img {
                 height: 2.4rem;
             }
@@ -57,6 +92,12 @@ header {
             justify-content: space-between;
             align-items: center;
             width: 17.2rem;
+            @media screen and (max-width: 110*8px) {
+                width: 5rem;
+                span {
+                display: none;
+                }
+            }
             img {
                 width: 5rem;
             }
