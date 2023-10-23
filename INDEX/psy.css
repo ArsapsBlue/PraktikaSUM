@@ -8,6 +8,7 @@
   background-color: transparent;
   font-family: "Golos Text", sans-serif;
   box-sizing: border-box;
+  padding: 0;
 }
 * a {
   color: #000;
@@ -35,6 +36,12 @@
 
 html {
   font-size: 8px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 432px) {
+  html {
+    font-size: 6.9px;
+  }
 }
 
 body {
@@ -57,6 +64,12 @@ body {
 @media screen and (max-width: 640px) and (min-width: 432px) {
   .mainContainer {
     width: 54rem;
+  }
+}
+@media screen and (max-width: 432px) {
+  .mainContainer {
+    width: 100vw;
+    padding: 5vw;
   }
 }
 
@@ -129,8 +142,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 432px) {
+  footer {
+    margin-top: 8rem;
+  }
+}
 footer .mainContainer {
-  height: 7.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,6 +162,11 @@ footer .mainContainer .creditsAndDesc {
   height: 100%;
   font-size: 1.8rem;
 }
+@media screen and (max-width: 432px) {
+  footer .mainContainer .creditsAndDesc {
+    width: 25.5rem;
+  }
+}
 footer .mainContainer .creditsAndDesc span {
   color: #989898;
 }
@@ -157,8 +179,18 @@ footer .mainContainer .social {
   align-items: flex-end;
   width: 14.9rem;
 }
+@media screen and (max-width: 432px) {
+  footer .mainContainer .social {
+    width: 11.9rem;
+  }
+}
 footer .mainContainer .social img {
   height: 3.4rem;
+}
+@media screen and (max-width: 432px) {
+  footer .mainContainer .social img {
+    height: 2.8rem;
+  }
 }
 
 .catDescBlock {
@@ -167,6 +199,12 @@ footer .mainContainer .social img {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 432px) {
+  .catDescBlock {
+    flex-direction: column-reverse;
+    margin: 4rem auto;
+  }
+}
 .catDescBlock .textBlock {
   display: flex;
   justify-content: space-between;
@@ -174,6 +212,16 @@ footer .mainContainer .social img {
   flex-direction: column;
   margin-right: 11rem;
   height: 100%;
+}
+@media screen and (max-width: 432px) {
+  .catDescBlock .textBlock {
+    margin-right: 0rem;
+  }
+}
+@media screen and (max-width: 432px) {
+  .catDescBlock .textBlock {
+    margin-top: 5rem;
+  }
 }
 .catDescBlock .textBlock .P {
   font-size: 3rem;
@@ -190,14 +238,28 @@ footer .mainContainer .social img {
   border-radius: 20px;
   height: 100%;
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 880px) and (min-width: 432px) {
   .catDescBlock img {
     height: 27rem;
+  }
+}
+@media screen and (max-width: 432px) {
+  .catDescBlock img {
+    height: 20rem;
+    width: 100vh;
+    border-radius: none;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
 .resultsBlock {
   margin: 7.8rem auto;
+}
+@media screen and (max-width: 432px) {
+  .resultsBlock {
+    margin: 2rem auto;
+  }
 }
 .resultsBlock .resultsBlockMainpart {
   display: flex;
@@ -208,11 +270,16 @@ footer .mainContainer .social img {
   margin-bottom: 3.4rem;
 }
 .resultsBlock .resultsBlockMainpart .sort {
-  width: 57.6rem;
+  width: 47.6rem;
   height: 3.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockMainpart .sort {
+    width: 80vw;
+  }
 }
 .resultsBlock .resultsBlockMainpart .sort span, .resultsBlock .resultsBlockMainpart .sort button {
   font-weight: 500;
@@ -242,34 +309,74 @@ footer .mainContainer .social img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 33.5rem;
+  min-height: 33.5rem;
   background-color: #fff;
   box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.09);
   border-radius: 20px;
   margin-bottom: 4.7rem;
   padding: 4rem;
 }
-.resultsBlock .resultsBlockListAndFilters .resList .resOne img {
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne {
+    width: 90vw;
+  }
+}
+.resultsBlock .resultsBlockListAndFilters .resList .resOne .catAvatar {
   width: 18.1rem;
 }
 @media screen and (max-width: 1232.8px) {
-  .resultsBlock .resultsBlockListAndFilters .resList .resOne img {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .catAvatar {
     width: 10rem;
   }
 }
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .catAvatar {
+    display: none;
+  }
+}
+.resultsBlock .resultsBlockListAndFilters .resList .resOne .catAvatarMobile {
+  width: 14.1rem;
+  display: none;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .catAvatarMobile {
+    display: block;
+  }
+}
+.resultsBlock .resultsBlockListAndFilters .resList .resOne .descH {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock {
-  margin-top: 4.7rem;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 50rem;
-  height: 32.1rem;
+  min-height: 32.1rem;
+}
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock {
+    margin-bottom: 5rem;
+  }
 }
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .H {
   position: relative;
   font-size: 3.6rem;
   font-weight: 500;
   height: 3.6rem;
+}
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .H {
+    font-size: 2.5rem;
+  }
 }
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating {
   display: flex;
@@ -278,6 +385,11 @@ footer .mainContainer .social img {
   width: 22.5rem;
   height: 8rem;
 }
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating {
+    width: 17.8rem;
+  }
+}
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating .score {
   width: 8rem;
   height: 8rem;
@@ -285,20 +397,38 @@ footer .mainContainer .social img {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating .score {
+    width: 6rem;
+  }
+}
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating .score span {
   font-size: 2.4rem;
   font-weight: 500;
 }
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating .score span {
+    font-size: 2rem;
+    margin-left: -4rem;
+  }
+}
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating .score img {
   height: 2.5rem;
   width: 2.5rem;
+}
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating .score img {
+    height: 2rem;
+    width: 2rem;
+  }
 }
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating span {
   font-size: 1.8rem;
   font-weight: 500;
 }
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .desc {
-  height: 14rem;
+  min-height: 14rem;
+  max-height: 19rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -313,9 +443,20 @@ footer .mainContainer .social img {
   font-size: 1.8rem;
   font-weight: 500;
 }
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .desc .descRow {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .desc .descRow span {
   align-self: flex-start;
   text-align: right;
+}
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .desc .descRow span {
+    text-align: left;
+  }
 }
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .desc .descRow span.descRowName {
   font-weight: 800;

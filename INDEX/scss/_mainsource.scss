@@ -4,6 +4,7 @@
     background-color: transparent;
     font-family: 'Golos Text', sans-serif;
     box-sizing: border-box;
+    padding: 0;
     a {
         color: #000;
         text-decoration: none;
@@ -22,7 +23,10 @@
 
 html {
     font-size: 8px;
-
+    @media screen and (max-width: 54*8px) {
+        font-size: 6.9px;
+    }
+    overflow-x: hidden;
 }
 
 body {
@@ -44,6 +48,10 @@ body {
         width: 54rem;
     }
     
+    @media screen and (max-width: 54*8px) {
+        width: 100vw;
+        padding: 5vw;
+    }
     
 }
 
@@ -53,6 +61,7 @@ body {
     font-size: 4.8rem;
     font-weight: 800;
     margin-bottom: 7.7rem;
+    
 }
 
 header {
@@ -107,13 +116,16 @@ header {
 
 footer {
     margin-top: 13.2rem;
+    @media screen and (max-width: 54*8px) {
+        margin-top: 8rem;
+    }
     height: 13.2rem;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     .mainContainer {
-        height: 7.5rem;
+        //height: 7.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -124,6 +136,9 @@ footer {
             text-align: right;
             flex-direction: column;
             width: 31.5rem;
+            @media screen and (max-width: 54*8px) {
+                width: 25.5rem;
+            }
             height: 100%;
             font-size: 1.8rem;
             span {
@@ -138,8 +153,16 @@ footer {
             justify-content: space-between;
             align-items: flex-end;
             width: 14.9rem;
+            @media screen and (max-width: 54*8px) {
+                width: 11.9rem;
+            }
             img {
                 height: 3.4rem;
+            }
+            @media screen and (max-width: 54*8px) {
+                img {
+                height: 2.8rem;
+                }
             }
         }
     }

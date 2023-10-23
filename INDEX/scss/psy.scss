@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 54*8px) {
+        flex-direction: column-reverse;
+        margin: 4rem auto;
+    }
     //height: 35.5rem;
     .textBlock {
         display: flex;
@@ -13,8 +17,14 @@
         align-items: flex-start;
         flex-direction: column;
         margin-right: 11rem;
+        @media screen and (max-width: 54*8px) {
+            margin-right: 0rem;
+        }
         //width: 91.2rem;
         height: 100%;
+        @media screen and (max-width: 54*8px) {
+            margin-top: 5rem;
+        }
         .P {
             font-size: 3rem;
         }
@@ -34,14 +44,23 @@
     img {
         border-radius: 20px;
         height: 100%;
-        @media screen and (max-width: 110*8px) {
+        @media screen and (max-width: 110*8px) and (min-width: 54*8px) {
             height: 27rem;
+        }
+        @media screen and (max-width: 54*8px) {
+            height: 20rem;
+            width: 100vh;
+            border-radius: none;
+            object-fit: cover;
         }
     }
 }
 
 .resultsBlock {
     margin: 7.8rem auto;
+    @media screen and (max-width: 54*8px) {
+        margin: 2rem auto;
+    }
     .resultsBlockMainpart {
         display: flex;
         justify-content: space-between;
@@ -50,7 +69,10 @@
         height: 8.8rem;
         margin-bottom: 3.4rem;
         .sort { 
-            width: 57.6rem;
+            width: 47.6rem;
+            @media screen and (max-width: 54*8px) {
+                width: 80vw;
+            }
             height: 3.2rem;
             display: flex;
             justify-content: space-between;
@@ -85,61 +107,111 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
-                height: 33.5rem;
+                min-height: 33.5rem;
                 background-color: #fff;           
                 box-shadow: 0px 0px 21px rgba(0,0,0,0.09);
                 border-radius: 20px;
                 margin-bottom: 4.7rem;
                 padding: 4rem;
+                @media screen and (max-width: 54*8px) {
+                    width: 90vw;
+                }
 
-                img {
+                .catAvatar {
                     width: 18.1rem;
                     @media screen and (max-width: 154.1*8px) {
                         width: 10rem;
                     }
+                    @media screen and (max-width: 54*8px) {
+                        display: none;
+                    }
+                }
+                .catAvatarMobile {
+                    width: 14.1rem;
+                    display: none;
+                    margin-right: 3rem;
+                    margin-bottom: 3rem;
+                    @media screen and (max-width: 54*8px) {
+                        display: block;
+                    }
+                }
+                .descH {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
                 }
                 .resOneTextBlock {
-                    margin-top: 4.7rem;
+                    //margin-top: 4.7rem;
                     display: flex;
                     //justify-content: space-between;
                     align-items: flex-start;
                     flex-direction: column;
                     width: 50rem;
-                    height: 32.1rem;
+                    @media screen and (max-width: 54*8px) {
+                        width: 100%;
+                    }
+                    @media screen and (max-width: 54*8px) {
+                        margin-bottom: 5rem;
+                    }
+
+                    min-height: 32.1rem;
+
                     .H {
                         position: relative;
                         font-size: 3.6rem;
                         font-weight: 500;
                         height: 3.6rem;
+                        @media screen and (max-width: 54*8px) {
+                            font-size: 2.5rem;
+                        }
                     }
                     .rating {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
                         width: 22.5rem;
+                        @media screen and (max-width: 54*8px) {
+                            width: 17.8rem;
+                        }
                         height: 8rem;
                         .score {
                             width: 8rem;
                             height: 8rem;
+                            @media screen and (max-width: 54*8px) {
+                                width: 6rem;
+                            }
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
                             span {
                                 font-size: 2.4rem;
+                                @media screen and (max-width: 54*8px) {
+                                    font-size: 2rem;
+                                    margin-left: -4rem;
+                                }
+
                                 font-weight: 500;
                             }
                             img {
                                 height: 2.5rem;
                                 width: 2.5rem;
+                                @media screen and (max-width: 54*8px) {
+                                    height: 2rem;
+                                    width: 2rem;
+                                }
+
                             }
                         }
+
+                        
                         span {
                             font-size: 1.8rem;
                             font-weight: 500;
                         }
                     }
                     .desc {
-                        height: 14rem;
+                        min-height: 14rem;
+                        max-height: 19rem;
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
@@ -152,9 +224,17 @@
                             align-items: center;
                             font-size: 1.8rem;
                             font-weight: 500;
+                            
+                            @media screen and (max-width: 54*8px) {
+                                flex-direction: column;
+                                margin-bottom: 1rem;
+                            }
                             span {
                                 align-self: flex-start;
                                 text-align: right;
+                                @media screen and (max-width: 54*8px) {
+                                    text-align: left;
+                                }
                             }
                             span.descRowName {
                                 font-weight: 800;

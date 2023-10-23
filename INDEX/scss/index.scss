@@ -4,10 +4,16 @@
 
 .mainSlider {
     height: 39.4rem;
+    @media screen and (max-width: 54*8px) {
+        height: 50rem;
+    }
     background-color: #fff;
     margin: 13.3rem auto 0;
-    @media screen and (max-width: 80*8px) {
-        display: none;
+    @media screen and (max-width: 54*8px) {
+        margin: 5.3rem auto 0;
+    }
+    @media screen and (max-width: 80*8px) and (min-width: 55*8px) {
+       display: none;
     }
     @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
         margin: 9rem auto 0;
@@ -35,6 +41,11 @@
         height: 35.5rem;
         width: 100%;
         background-color: #fff;
+        @media screen and (max-width: 54*8px) {
+            height: 100%;
+        }
+
+        
 
         
         .sliderTextblock{
@@ -43,6 +54,12 @@
             align-items: flex-start;
             flex-direction: column;
             padding: 2rem;
+            height: 100%;
+            background-color: #fff;
+            @media screen and (max-width: 54*8px) {
+                padding: 0;
+            }
+
             .sliderTextblockMain {
                 display: flex;
                 justify-content: flex-start;
@@ -51,6 +68,11 @@
                 width: 92.9rem;
                 height: 26.9rem;
                 font-weight: 500;
+                background-color: #fff;
+                @media screen and (max-width: 54*8px) {
+                    height: 100%;
+                }
+
 
                 @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
                     width: 63rem;
@@ -58,11 +80,11 @@
                     //margin-top: 1rem;
                     //height: 35rem;
                     .H {
-                        font-size: 4rem !important;
-                        margin-bottom: 2rem !important; 
+                        font-size: 4.5rem !important;
+                        margin-bottom: 7.2rem !important; 
                     }
                     .P {
-                        font-size: 3rem !important;
+                        font-size: 3.3rem !important;
                     }
                 }
                 
@@ -72,19 +94,30 @@
                     height: 25rem;
                     .H {
                         font-size: 3.7rem !important;
-                        margin-bottom: 2rem !important;
+                        margin-bottom: 5.1rem !important;
                     }
                     .P {
                         font-size: 2.5rem !important;
                     }
                 }
 
+                @media screen and (max-width: 54*8px) {
+                    width: 90vw;
+                    .H {
+                        font-size: 5rem !important;
+                        margin-bottom: 3rem !important;
+                    }
+                    .P {
+                        font-size: 3.5rem !important;
+                    }
+                 }
+
                 .H {
-                    margin-bottom: 5rem;
+                    margin-bottom: 7.3rem;
                     font-size: 5.5rem;
                 }
                 .P {
-                    font-size: 3.6rem;
+                    font-size: 3.8rem;
                 }
             }
             .sliderTextblockA {
@@ -114,13 +147,19 @@
 
         img {
             width: 44rem;
+            max-height: 32rem;
+            object-fit: contain;
             @media screen and (max-width: 154.1*8px) and (min-width: 110*8px) {
                 width: 40rem;
             }
             @media screen and (max-width: 110*8px) and (min-width: 80*8px) {
                 width: 35rem;
             }
+            @media screen and (max-width: 54*8px) {
+                display: none;
+             }
         }
+        
     }
 
     .sliderStatusbar {
@@ -142,6 +181,9 @@
     }
 
     .swiper-pagination {
+        @media screen and (max-width: 54*8px) {
+            display: none;
+         }
         bottom:0;
         position: relative;
     }
@@ -166,6 +208,9 @@
     justify-content: space-between;
     align-items: center;
     margin: 9rem auto;
+    @media screen and (max-width: 54*8px) {
+        display: none;
+    }
     
 
     .searchBlockGeneral {
@@ -246,6 +291,9 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    @media screen and (max-width: 54*8px) {
+        margin-top: -4rem;
+    }
     .categoryBlockColumn {
         display: flex;
         //justify-content: flex-start;
@@ -285,6 +333,9 @@
     align-items: flex-start;
     flex-direction: column;
     margin: 11.7rem auto;
+    @media screen and (max-width: 54*8px) {
+        margin: 4rem auto;
+    }
     .storiesBlockGeneral {
         display: flex;
         justify-content: space-between;
@@ -320,10 +371,13 @@
                     height: 32rem;
                     width: 35rem;
             }
-            @media screen and (max-width: 80*8px) {
+            @media screen and (max-width: 80*8px) and (min-width: 54*8px) {
                 width: 54rem;
             }
 
+            @media screen and (max-width: 54*8px) {
+                width: 90vw !important;
+            }
             img {
                 height: 10rem;
             }
@@ -377,21 +431,15 @@
                             background-color: #fff;
                             overflow: hidden;
                             width: 45rem;
-                height: 70rem;
-                background: #fff;
-                border: 2px solid #8b424c;
-                border-radius: 20px;
+                            height: 70rem;
+                            background: #fff;
+                            border: 2px solid #8b424c;
+                            border-radius: 20px;
                         }
                     }
                     .swiper-pagination {
 
                     }
-            }
-
-
-
-            #story1 {
-
             }
 
         }
@@ -427,11 +475,15 @@
         @media screen and (max-width: 80*8px) {
             justify-content: flex-start;
         }
+        
         //grid-auto-flow: column;
         width: 100%;
         .articlesBlockOne {
+            @media screen and (max-width: 54*8px) {
+                width: 90vw !important;
+            }
             @media screen and (max-width: 80*8px) {
-                width: 60;;
+                
             }
             //width: 74.3rem;
             height: 39.1rem;
