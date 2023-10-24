@@ -8,7 +8,7 @@
         height: 50rem;
     }
     background-color: #fff;
-    margin: 13.3rem auto 0;
+    margin: 3rem auto 0;
     @media screen and (max-width: 54*8px) {
         margin: 5.3rem auto 0;
     }
@@ -465,12 +465,6 @@
     
     .articlesBlockGeneral {
         margin: 0 auto;
-        display: grid;
-       // grid-template-columns: 74.3rem 74.3rem;
-       grid-template-columns: repeat(auto-fill, minmax(50rem, 72.3rem));
-        grid-column-gap: 2.7rem;
-        grid-auto-rows: 39.1rem;
-        grid-row-gap: 2.7rem;
         justify-content: center;
         @media screen and (max-width: 80*8px) {
             justify-content: flex-start;

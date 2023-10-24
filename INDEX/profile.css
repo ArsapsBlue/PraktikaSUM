@@ -1,0 +1,351 @@
+.pomoguColor, .activeColor {
+  color: #8b424c;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  font-family: "Golos Text", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+}
+* a {
+  color: #000;
+  text-decoration: none;
+}
+* input {
+  border-bottom: 1px solid #7c7c7c;
+}
+* input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+* input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+* input[type=search]::-webkit-search-decoration,
+* input[type=search]::-webkit-search-cancel-button,
+* input[type=search]::-webkit-search-results-button,
+* input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+html {
+  font-size: 8px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 432px) {
+  html {
+    font-size: 6.9px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.mainContainer {
+  width: 149.2rem;
+}
+@media screen and (max-width: 1232.8px) and (min-width: 880px) {
+  .mainContainer {
+    width: 110rem;
+  }
+}
+@media screen and (max-width: 880px) and (min-width: 640px) {
+  .mainContainer {
+    width: 80rem;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 432px) {
+  .mainContainer {
+    width: 54rem;
+  }
+}
+@media screen and (max-width: 432px) {
+  .mainContainer {
+    width: 100vw;
+    padding: 5vw;
+  }
+}
+
+.Hs1 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  margin-bottom: 7.7rem;
+  display: inline-block;
+}
+
+.Hs2 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin-bottom: 4.4rem;
+  display: inline-block;
+}
+
+.sM {
+  font-size: 2.4rem;
+}
+
+.grayButton {
+  font-size: 2.4rem;
+  color: #7c7c7c;
+  text-decoration: underline;
+  display: block;
+}
+
+.baseBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 4rem;
+}
+@media screen and (max-width: 432px) {
+  .baseBlock {
+    width: 90vw;
+  }
+}
+
+.blockShadow {
+  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.09);
+}
+
+.blockRedBorder {
+  border: 1px solid #8b424c;
+}
+
+.mainCols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 72.3rem));
+  grid-column-gap: 2.7rem;
+  grid-row-gap: 2.7rem;
+}
+
+header {
+  font-size: 2.4rem;
+  height: 10.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 10rem;
+}
+header .logo {
+  width: 22.5rem;
+}
+header .headerButtons {
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 48.9rem;
+}
+@media screen and (max-width: 880px) {
+  header .headerButtons {
+    width: 25.7rem;
+  }
+}
+header .headerButtons .headerButtonsSmall {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 19rem;
+}
+@media screen and (max-width: 880px) {
+  header .headerButtons .headerButtonsSmall {
+    width: 17rem;
+  }
+}
+header .headerButtons .headerButtonsSmall img {
+  height: 2.4rem;
+}
+header .headerButtons .headerButtonsAvatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 17.2rem;
+}
+@media screen and (max-width: 880px) {
+  header .headerButtons .headerButtonsAvatar {
+    width: 5rem;
+  }
+  header .headerButtons .headerButtonsAvatar span {
+    display: none;
+  }
+}
+header .headerButtons .headerButtonsAvatar img {
+  width: 5rem;
+}
+
+footer {
+  margin-top: 13.2rem;
+  height: 13.2rem;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 432px) {
+  footer {
+    margin-top: 8rem;
+  }
+}
+footer .mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .mainContainer .creditsAndDesc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+  flex-direction: column;
+  width: 31.5rem;
+  height: 100%;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 432px) {
+  footer .mainContainer .creditsAndDesc {
+    width: 25.5rem;
+  }
+}
+footer .mainContainer .creditsAndDesc span {
+  color: #989898;
+}
+footer .mainContainer .creditsAndDesc a {
+  color: #000;
+}
+footer .mainContainer .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 14.9rem;
+}
+@media screen and (max-width: 432px) {
+  footer .mainContainer .social {
+    width: 11.9rem;
+  }
+}
+footer .mainContainer .social img {
+  height: 3.4rem;
+}
+@media screen and (max-width: 432px) {
+  footer .mainContainer .social img {
+    height: 2.8rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.main {
+  margin: 0 auto;
+  height: auto;
+}
+
+.mainCols {
+  width: 100%;
+  grid-column-gap: 12rem;
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 65rem));
+}
+
+.col {
+  display: block;
+  height: auto;
+}
+
+.recOne {
+  display: block;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+.recOne span {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.recOne .rowName {
+  font-weight: 600;
+}
+
+.accInfo, .specProfile {
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+.accInfo img, .specProfile img {
+  width: 15rem;
+  height: 15rem;
+  margin-right: 5rem;
+}
+.accInfo span, .specProfile span {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.accInfo .rowName, .specProfile .rowName {
+  font-weight: 600;
+  display: inline-block;
+}
+.accInfo .rowMain, .specProfile .rowMain {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.accInfo button, .specProfile button {
+  display: inline;
+  margin-right: 2rem;
+}
+
+.specProfile button {
+  margin-top: 1.6rem;
+}
+.specProfile .imgZone {
+  width: 15rem;
+  height: 15rem;
+  margin-right: 5rem;
+  position: relative;
+}
+.specProfile .imgZone img {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.specProfile .imgZone img.create {
+  height: 4rem;
+  width: 4rem;
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+}
+.specProfile .imgZone div {
+  position: relative;
+  display: block;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 5rem;
+  margin-left: 0rem;
+  margin-top: -10rem;
+  background-color: #8b424c;
+}
+.specProfile .imgZone div img {
+  height: 5rem;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+  margin-top: 2.23rem;
+  margin-right: 8rem;
+}
+
+.create {
+  text-align: start;
+}
+.create button {
+  text-align: start;
+  margin-top: 4rem;
+}/*# sourceMappingURL=profile.css.map */

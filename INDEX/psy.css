@@ -77,6 +77,54 @@ body {
   font-size: 4.8rem;
   font-weight: 800;
   margin-bottom: 7.7rem;
+  display: inline-block;
+}
+
+.Hs2 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin-bottom: 4.4rem;
+  display: inline-block;
+}
+
+.sM {
+  font-size: 2.4rem;
+}
+
+.grayButton {
+  font-size: 2.4rem;
+  color: #7c7c7c;
+  text-decoration: underline;
+  display: block;
+}
+
+.baseBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 4rem;
+}
+@media screen and (max-width: 432px) {
+  .baseBlock {
+    width: 90vw;
+  }
+}
+
+.blockShadow {
+  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.09);
+}
+
+.blockRedBorder {
+  border: 1px solid #8b424c;
+}
+
+.mainCols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 72.3rem));
+  grid-column-gap: 2.7rem;
+  grid-row-gap: 2.7rem;
 }
 
 header {
@@ -85,7 +133,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 10rem;
 }
 header .logo {
   width: 22.5rem;
@@ -305,21 +353,9 @@ footer .mainContainer .social img {
   }
 }
 .resultsBlock .resultsBlockListAndFilters .resList .resOne {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
   min-height: 33.5rem;
-  background-color: #fff;
-  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.09);
-  border-radius: 20px;
   margin-bottom: 4.7rem;
-  padding: 4rem;
-}
-@media screen and (max-width: 432px) {
-  .resultsBlock .resultsBlockListAndFilters .resList .resOne {
-    width: 90vw;
-  }
+  align-items: center;
 }
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .catAvatar {
   width: 18.1rem;
@@ -364,7 +400,7 @@ footer .mainContainer .social img {
 }
 @media screen and (max-width: 432px) {
   .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock {
-    margin-bottom: 5rem;
+    margin-bottom: 8.7rem;
   }
 }
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .H {
@@ -375,7 +411,7 @@ footer .mainContainer .social img {
 }
 @media screen and (max-width: 432px) {
   .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .H {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 }
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating {
@@ -387,7 +423,7 @@ footer .mainContainer .social img {
 }
 @media screen and (max-width: 432px) {
   .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating {
-    width: 17.8rem;
+    width: 20.8rem;
   }
 }
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating .score {
@@ -408,7 +444,6 @@ footer .mainContainer .social img {
 }
 @media screen and (max-width: 432px) {
   .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating .score span {
-    font-size: 2rem;
     margin-left: -4rem;
   }
 }
@@ -426,6 +461,11 @@ footer .mainContainer .social img {
   font-size: 1.8rem;
   font-weight: 500;
 }
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .rating span {
+    font-size: 2.1rem;
+  }
+}
 .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .desc {
   min-height: 14rem;
   max-height: 19rem;
@@ -442,6 +482,11 @@ footer .mainContainer .social img {
   align-items: center;
   font-size: 1.8rem;
   font-weight: 500;
+}
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .desc .descRow {
+    font-size: 2.1rem;
+  }
 }
 @media screen and (max-width: 432px) {
   .resultsBlock .resultsBlockListAndFilters .resList .resOne .resOneTextBlock .desc .descRow {
@@ -470,6 +515,17 @@ footer .mainContainer .social img {
 .resultsBlock .resultsBlockListAndFilters .resList .resOne button img {
   height: 2.5rem;
   width: 2.5rem;
+}
+@media screen and (max-width: 432px) {
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne button {
+    margin-top: 0.4rem;
+    height: 3rem;
+    width: 3rem;
+  }
+  .resultsBlock .resultsBlockListAndFilters .resList .resOne button img {
+    height: 3rem;
+    width: 3rem;
+  }
 }
 .resultsBlock .resultsBlockListAndFilters .resList:nth-child(1) {
   margin-top: 4rem;

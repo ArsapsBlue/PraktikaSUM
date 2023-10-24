@@ -1,0 +1,123 @@
+@import '_other.scss';
+@import '_mainsource.scss';
+
+
+button {
+    cursor: pointer;
+}
+
+.main {
+    margin: 0 auto;
+    height: auto;
+}
+
+.mainCols {
+    width: 100%;
+    grid-column-gap: 12rem;
+    grid-template-columns: repeat(auto-fill, minmax(50rem, 65rem));
+    //grid-auto-rows: none;
+    //height: auto;
+    
+}
+
+.col {
+    display: block;
+    height: auto;
+}
+
+
+.recOne {
+    display: block;
+    //height: 25rem;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    span {
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+    .rowName {
+        font-weight: 600;
+    }
+}
+
+.accInfo, .specProfile {
+    flex-direction: row;
+    
+    margin-bottom: 5rem;
+    img {
+        width: 15rem;
+        height: 15rem;
+        margin-right: 5rem;
+    }
+    span {
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+    .rowName {
+        font-weight: 600;
+        display: inline-block;
+    }
+    .rowMain {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    button {
+        display: inline;
+        margin-right: 2rem;
+    }
+}
+
+.specProfile {
+    button {
+        margin-top: 1.6rem;
+    }
+    .imgZone {
+        width: 15rem;
+        height: 15rem;
+        margin-right: 5rem;
+        position: relative;
+        img {
+            position: relative;
+            height: 10rem;
+            width: 10rem;
+            margin-left: 5rem;
+            margin-bottom: 5rem;
+            object-fit: contain;
+        }
+        img.create {
+            height: 4rem;
+            width: 4rem;
+            margin-left: 10rem;
+            margin-bottom: 10rem;
+        }
+        div {
+            position: relative;
+            display: block;
+            height: 10rem;
+            width: 10rem;
+            border-radius: 5rem;
+            margin-left: 0rem;
+            margin-top: -10rem;
+            background-color: #8b424c;
+            img {
+                height: 5rem;
+                
+                margin-left: 0rem;
+                margin-bottom: 0rem;
+                margin-top: 2.23rem;
+                margin-right: 8rem;
+            }
+        }
+        
+        
+    }
+}
+
+
+.create {
+    text-align: start;
+    button {
+        text-align: start;
+        margin-top: 4rem; 
+    }
+}

@@ -77,6 +77,54 @@ body {
   font-size: 4.8rem;
   font-weight: 800;
   margin-bottom: 7.7rem;
+  display: inline-block;
+}
+
+.Hs2 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin-bottom: 4.4rem;
+  display: inline-block;
+}
+
+.sM {
+  font-size: 2.4rem;
+}
+
+.grayButton {
+  font-size: 2.4rem;
+  color: #7c7c7c;
+  text-decoration: underline;
+  display: block;
+}
+
+.baseBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 4rem;
+}
+@media screen and (max-width: 432px) {
+  .baseBlock {
+    width: 90vw;
+  }
+}
+
+.blockShadow {
+  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.09);
+}
+
+.blockRedBorder {
+  border: 1px solid #8b424c;
+}
+
+.mainCols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 72.3rem));
+  grid-column-gap: 2.7rem;
+  grid-row-gap: 2.7rem;
 }
 
 header {
@@ -85,7 +133,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 10rem;
 }
 header .logo {
   width: 22.5rem;
@@ -196,7 +244,7 @@ footer .mainContainer .social img {
 .mainSlider {
   height: 39.4rem;
   background-color: #fff;
-  margin: 13.3rem auto 0;
+  margin: 3rem auto 0;
 }
 @media screen and (max-width: 432px) {
   .mainSlider {
@@ -642,11 +690,6 @@ footer .mainContainer .social img {
 }
 .articlesBlock .articlesBlockGeneral {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50rem, 72.3rem));
-  grid-column-gap: 2.7rem;
-  grid-auto-rows: 39.1rem;
-  grid-row-gap: 2.7rem;
   justify-content: center;
   width: 100%;
 }

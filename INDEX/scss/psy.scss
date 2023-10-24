@@ -103,20 +103,9 @@
         }
         .resList {
             .resOne {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
                 min-height: 33.5rem;
-                background-color: #fff;           
-                box-shadow: 0px 0px 21px rgba(0,0,0,0.09);
-                border-radius: 20px;
                 margin-bottom: 4.7rem;
-                padding: 4rem;
-                @media screen and (max-width: 54*8px) {
-                    width: 90vw;
-                }
-
+                align-items: center;
                 .catAvatar {
                     width: 18.1rem;
                     @media screen and (max-width: 154.1*8px) {
@@ -151,7 +140,7 @@
                         width: 100%;
                     }
                     @media screen and (max-width: 54*8px) {
-                        margin-bottom: 5rem;
+                        margin-bottom: 8.7rem;
                     }
 
                     min-height: 32.1rem;
@@ -162,7 +151,7 @@
                         font-weight: 500;
                         height: 3.6rem;
                         @media screen and (max-width: 54*8px) {
-                            font-size: 2.5rem;
+                            font-size: 2.8rem;
                         }
                     }
                     .rating {
@@ -171,7 +160,7 @@
                         align-items: center;
                         width: 22.5rem;
                         @media screen and (max-width: 54*8px) {
-                            width: 17.8rem;
+                            width: 20.8rem;
                         }
                         height: 8rem;
                         .score {
@@ -186,7 +175,7 @@
                             span {
                                 font-size: 2.4rem;
                                 @media screen and (max-width: 54*8px) {
-                                    font-size: 2rem;
+                                   // font-size: 2.4rem;
                                     margin-left: -4rem;
                                 }
 
@@ -206,6 +195,9 @@
                         
                         span {
                             font-size: 1.8rem;
+                            @media screen and (max-width: 54*8px) {
+                                font-size: 2.1rem;
+                            }
                             font-weight: 500;
                         }
                     }
@@ -224,6 +216,9 @@
                             align-items: center;
                             font-size: 1.8rem;
                             font-weight: 500;
+                            @media screen and (max-width: 54*8px) {
+                                font-size: 2.1rem;
+                            }
                             
                             @media screen and (max-width: 54*8px) {
                                 flex-direction: column;
@@ -250,6 +245,15 @@
                     img {
                         height: 2.5rem;
                         width: 2.5rem;
+                    }
+                    @media screen and (max-width: 54*8px) {
+                        margin-top: 0.4rem;
+                        height: 3rem;
+                        width: 3rem;
+                        img {
+                            height: 3rem;
+                            width: 3rem;
+                        }
                     }
                 }
             }
