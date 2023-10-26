@@ -1,0 +1,33 @@
+@import '_other.scss';
+@import '_mainsource.scss';
+
+
+footer {
+    @media screen and (max-width: 54*8px) {
+        position: fixed;
+        margin-bottom: 5vw;
+        bottom: 0;
+    }
+}
+
+form.baseBlock {
+    width: 59.3rem;
+    flex-direction: column;
+    @media screen and (max-width: 54*8px) {
+        width: 90vw;
+    }
+}
+
+.authBottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        font-size: 2.5rem;
+        text-align: right;
+        margin-right: 3rem;
+        cursor: pointer;
+    }
+}
+

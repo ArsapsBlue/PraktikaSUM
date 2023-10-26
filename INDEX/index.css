@@ -34,6 +34,37 @@
   display: none;
 }
 
+.main {
+  margin: 0 auto;
+  height: auto;
+}
+
+.baseInput {
+  height: 6.5rem;
+  border: 1px #000000 solid;
+  border-radius: 18px;
+  padding-left: 3.8rem;
+  padding-right: 3.8rem;
+  padding-top: 1.72rem;
+  padding-bottom: 1.97rem;
+  margin-bottom: 3.6rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.baseInputBig {
+  height: 72rem;
+}
+
+label {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2.2rem;
+}
+
 html {
   font-size: 8px;
   overflow-x: hidden;
@@ -91,11 +122,55 @@ body {
   font-size: 2.4rem;
 }
 
+.rowName {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.rowMain {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
 .grayButton {
   font-size: 2.4rem;
   color: #7c7c7c;
   text-decoration: underline;
   display: block;
+  cursor: pointer;
+}
+.grayButton a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  display: inherit;
+}
+
+.redButton {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  border: #5e191d solid 2px;
+  border-radius: 2rem;
+  background-color: #8b424c;
+  height: 8rem;
+  width: 30.9rem;
+  display: block;
+  cursor: pointer;
+}
+
+.whiteButton {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  border: #5e191d solid 2px;
+  border-radius: 2rem;
+  background-color: #ffffff;
+  height: 8rem;
+  color: #8b424c;
+  width: 30.9rem;
+  display: block;
+  cursor: pointer;
 }
 
 .baseBlock {
@@ -105,11 +180,20 @@ body {
   background-color: #fff;
   border-radius: 20px;
   padding: 4rem;
+  margin-bottom: 5rem;
 }
 @media screen and (max-width: 432px) {
   .baseBlock {
     width: 90vw;
   }
+}
+
+.baseBlockClassic {
+  flex-direction: column;
+  padding: 0;
+}
+.baseBlockClassic input, .baseBlockClassic select {
+  display: block;
 }
 
 .blockShadow {

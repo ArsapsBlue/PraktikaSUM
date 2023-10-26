@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрация обработки событий</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .example {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Обработка событий</h1>
+    
+    <div class="example">
+        <button id="button1">Пример 1: Click</button>
+        <p id="output1">Событие еще не произошло.</p>
+    </div>
+
+    <div class="example">
+        <button id="button2">Пример 2: Mouseover</button>
+        <p id="output2">Событие еще не произошло.</p>
+    </div>
+
+    <div class="example">
+        <button id="button3">Пример 3: Mouseout</button>
+        <p id="output3">Событие еще не произошло.</p>
+    </div>
+
+    <div class="example">
+        <button id="button4">Пример 4: Keypress</button>
+        <p id="output4">Событие еще не произошло.</p>
+    </div>
+
+    <div class "example">
+        <label for="selectElement">Пример 5: Change</label>
+        <select id="selectElement">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+        <p id="output5">Событие еще не произошло.</p>
+    </div>
+
+    <div class="example">
+        <button id="button6">Пример 6: Dblclick</button>
+        <p id="output6">Событие еще не произошло.</p>
+    </div>
+
+    <div class="example">
+        <button id="button7">Пример 7: Contextmenu</button>
+        <p id="output7">Событие еще не произошло.</p>
+    </div>
+
+    <div class="example">
+        <form id="formElement">
+            <input type="text" name="text" />
+            <input type="submit" value="Submit" />
+        </form>
+        <p id="output8">Событие еще не произошло.</p>
+    </div>
+
+    <div class="example">
+        <button id="button9">Пример 9: Resize</button>
+        <p id="output9">Событие еще не произошло.</p>
+    </div>
+
+    <div class="example">
+        <button id="button10">Пример 10: Load</button>
+        <p id="output10">Событие Load еще не произошло.</p>
+    </div>
+
+    <script>
+        // Функция для обработки события Click
+        function handleClick() {
+            const output = document.getElementById("output1");
+            output.textContent = "Событие Click произошло!";
+        }
+        const button1 = document.getElementById("button1");
+        button1.addEventListener("click", handleClick);
+
+        // Функция для обработки события Mouseover
+        function handleMouseover() {
+            const output = document.getElementById("output2");
+            output.textContent = "Событие Mouseover произошло!";
+        }
+        const button2 = document.getElementById("button2");
+        button2.addEventListener("mouseover", handleMouseover);
+
+        // Функция для обработки события Mouseout
+        function handleMouseout() {
+            const output = document.getElementById("output3");
+            output.textContent = "Событие Mouseout произошло!";
+        }
+        const button3 = document.getElementById("button3");
+        button3.addEventListener("mouseout", handleMouseout);
+
+        // Функция для обработки события Keypress
+        function handleKeypress() {
+            const output = document.getElementById("output4");
+            output.textContent = "Событие Keypress произошло!";
+        }
+        document.addEventListener("keypress", handleKeypress);
+
+        // Функция для обработки события Change
+        function handleChange() {
+            const output = document.getElementById("output5");
+            output.textContent = "Событие Change произошло!";
+        }
+        const select = document.getElementById("selectElement");
+        select.addEventListener("change", handleChange);
+
+        // Функция для обработки события Dblclick
+        function handleDblclick() {
+            const output = document.getElementById("output6");
+            output.textContent = "Событие Dblclick произошло!";
+        }
+        const button6 = document.getElementById("button6");
+        button6.addEventListener("dblclick", handleDblclick);
+
+        // Функция для обработки события Contextmenu
+        function handleContextmenu(event) {
+            event.preventDefault();
+            const output = document.getElementById("output7");
+            output.textContent = "Событие Contextmenu произошло!";
+        }
+        const button7 = document.getElementById("button7");
+        button7.addEventListener("contextmenu", handleContextmenu);
+
+        // Функция для обработки события Submit
+        function handleSubmit(event) {
+            event.preventDefault();
+            const output = document.getElementById("output8");
+            output.textContent = "Событие Submit произошло!";
+        }
+        const form = document.getElementById("formElement");
+        form.addEventListener("submit", handleSubmit);
+
+        // Функция для обработки события Resize
+        function handleResize() {
+            const output = document.getElementById("output9");
+            output.textContent = "Событие Resize произошло!";
+        }
+        window.addEventListener("resize", handleResize);
+
+        // Функция для обработки события Load
+        function handleLoad() {
+            const output = document.getElementById("output10");
+            output.textContent = "Событие Load произошло!";
+        }
+        window.addEventListener("load", handleLoad);
+    </script>
+</body>
+</html>

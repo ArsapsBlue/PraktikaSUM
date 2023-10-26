@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="spec.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <title>Профиль Психолог – редактировние</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">  
+</head>
+<body>
+    <header class="mainContainer">
+        <a href="index.html"><img src="img/logo.png" alt="Помогу" class="logo"></a>
+        <div class="headerButtons">
+            <div class="headerButtonsSmall">
+                <a href=""><img src="img/search.png" alt="Поиск"></a>
+                <a href=""><img src="img/create.png" alt="Добавить"></a>
+                <a href=""><img src="img/star.png" alt="Избранное"></a>
+                <a href=""><img src="img/messanger.png" alt="Сообщения"></a>
+            </div>
+            <div class="headerButtonsAvatar">
+                <a href="profile.html"><span>Арсений</span></a>
+                <a href="profile.html"><img src="img/avatar.png" alt=""></a>
+            </div> 
+        </div>
+    </header>
+    <div class="main mainContainer">
+        <span class="Hs1">Психолог</span>
+        <div class="mainCols">
+            <div class="col">
+                <span class="Hs2">Профиль специалиста</span>
+                <div class="specProfile baseBlock blockRedBorder spec1">
+                    <div class="imgZone">
+                        <img src="img/accInfo.png" alt="Аватар">
+                        <div><img src="img/handPsy.png" alt=""></div>
+                    </div>
+                    <div class="textBox">
+                        <span class="sM rowName rowMain">Психолог</span><br>
+                        <span class="sM rowName">город Кинешма</span>
+                        <span class="sM rowName">30 активных услуг</span>
+                        <span class="sM rowName">767 просмотров за неделю</span>
+                        <span class="sM rowName">5 записей</span><br>
+                    <button class="grayButton"><a href="one.html">Карточка</a></button>
+                    <button class="grayButton">Удалить</button>
+                    </div>
+                </div>
+                <span class="Hs2">Редактирование</span>
+                <form class="baseBlock baseBlockClassic">
+                    <label for="citySelect">Город</label>
+                    <select class="baseInput" id="citySelect">
+                        <option value="Кинешма">Кинешма</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Наволоки">Наволоки</option>
+                    </select>
+                    <label for="education">Образование</label>
+                    <input class="baseInput" type="text" id="education"  minlength="0" maxlength="60" size="10" />
+                    <label for="categorySelect">Сфера</label>
+                    <select class="baseInput" name="city" id="categorySelect">
+                        <option value="Кинешма">Психолог</option>
+                        <option value="Москва">Сантехник</option>
+                        <option value="Наволоки">Няня</option>
+                     </select>
+                     
+                    <label for="aboutMe">О себе</label>
+                    <input class="baseInput baseInputBig" type="text" id="aboutMe" required minlength="0" maxlength="1000" size="10" />                      
+                    <label>Телефон</label>
+                    <input class="baseInput" type="tel" required minlength="0" maxlength="60" size="10" />
+                    <button class="grayButton">Сохранить</button>
+                </form>
+                <span class="Hs2">Услуги</span>
+                <form class="baseBlock blockRedBorder serv">
+                    <label>Название</label>
+                    <input class="baseInput" type="text" required minlength="0" maxlength="60" size="10" />
+                    <label>Краткое описание</label>
+                    <input class="baseInput" type="text" required minlength="0" maxlength="60" size="10" />
+                    <label>Стоимость (рублей)</label>
+                    <input class="baseInput" type="text" required minlength="0" maxlength="60" size="10" />
+                    <label>Длительность (минут)</label>
+                    <input class="baseInput" type="text" required minlength="0" maxlength="60" size="10" />
+                    <button class="grayButton">Сохранить</button>
+                    <button class="grayButton">Удалить</button>
+                </form>
+                <div class="specProfile baseBlock blockRedBorder create">
+                    <div class="imgZone create">
+                        <img class="create" src="img/+.png" alt="Аватар">
+                    </div>
+                    <div class="textBox">
+                        <button><span class="sM rowName rowMain pomoguColor">Создать еще одну услугу</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="Hs2">Окна</span>
+                <form class="baseBlock blockRedBorder wind">
+                    <label>Услуга</label>
+                    <select class="baseInput" name="city" id="categorySelect">
+                        <option value="Групповая консультация">Групповая консультация</option>
+                        <option value="Индивидуальная консультация">Индивидуальная консультация</option>
+                        <option value="Собутыльник">Собутыльник</option>
+                     </select>
+                    <label>Дата</label>
+                    <input class="baseInput" type="date" required minlength="0" maxlength="60" size="10" />
+                    <label>Время начала</label>
+                    <input class="baseInput" type="time" required minlength="0" maxlength="60" size="10" />
+                    <button class="grayButton">Сохранить</button>
+                    <button class="grayButton">Удалить</button>
+                </form>
+                <div class="specProfile baseBlock blockRedBorder create">
+                    <div class="imgZone create">
+                        <img class="create" src="img/+.png" alt="Аватар">
+                    </div>
+                    <div class="textBox">
+                        <button><span class="sM rowName rowMain pomoguColor">Создать еще одно окно</span></button>
+                    </div>
+                </div>
+                <span class="Hs2">Записи к вам на прием</span>
+                <div class="recOne baseBlock blockShadow">
+                    <span class="sM"><span class="rowName">Запись на 25.09.2023</span></span>
+                    <span class="sM"><span class="rowName">Клиент:</span> Шишкин Иван Петрович</span>
+                    <span class="sM"><span class="rowName">Телефон:</span> +7(555)555-55-55</span>
+                    <button class="grayButton">Отменить запись</button>
+                </div>
+                <div class="recOne baseBlock blockShadow">
+                    <span class="sM"><span class="rowName">Запись на 25.09.2023</span></span>
+                    <span class="sM"><span class="rowName">Клиент:</span> Шишкин Иван Петрович</span>
+                    <span class="sM"><span class="rowName">Телефон:</span> +7(555)555-55-55</span>
+                    <button class="grayButton">Отменить запись</button>
+                </div>
+                <div class="recOne baseBlock blockShadow">
+                    <span class="sM"><span class="rowName">Запись на 25.09.2023</span></span>
+                    <span class="sM"><span class="rowName">Клиент:</span> Шишкин Иван Петрович</span>
+                    <span class="sM"><span class="rowName">Телефон:</span> +7(555)555-55-55</span>
+                    <button class="grayButton">Отменить запись</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="mainContainer">
+            <div class="social">
+                <a href=""><img src="img/vk.png" alt="VK"></a>
+                <a href=""><img src="img/tiktok.png" alt="TikTok"></a>
+                <a href=""><img src="img/telegram.png" alt="Telegram"></a>
+            </div>
+            <div class="creditsAndDesc">
+                <span>Помогу. Сервис поиска и создания объявлений.</span>
+                <a href="">Подробнее о проекте</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,248 @@
+@import '_other.scss';
+@import '_mainsource.scss';
+
+
+
+p {
+    font-size: 3rem;
+}
+
+.oneMain {
+    width: 120.9rem;
+    @media screen and (max-width: 54*8px) {
+        width: auto;
+    }
+}
+
+.oneBlock {
+    margin-bottom: 4.4rem;
+    width: 100%;
+}
+
+.oneHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35.5rem;
+    margin-bottom: 7rem !important;
+    @media screen and (max-width: 54*8px) {
+        height: auto;
+        flex-direction: column;
+        margin-bottom: inherit;
+    }
+
+    img {
+        width: 35.5rem;
+        height: 35.5rem;
+        @media screen and (max-width: 54*8px) {
+            width: 20.5rem;
+            height: 20.5rem;
+            align-self: start;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    .oneHeadText {
+        padding-top: 3rem;
+        width: 75.5rem;
+        height: 100%;
+        @media screen and (max-width: 54*8px) {
+            width: 90vw;
+            height: auto;
+        }
+        .Hs1 {
+            @media screen and (max-width: 54*8px) {
+                margin-bottom: 3rem;
+            }
+        }
+        .sM {
+            display: inline-block;
+            margin-bottom: 1rem;
+    
+        }
+        .sM.rowName {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.oneServ {
+    @media screen and (max-width: 54*8px) {
+        flex-direction: column;
+        height: auto;
+    }
+    .oneServText {
+        width: 60rem;
+        height: 100%;
+        @media screen and (max-width: 54*8px) {
+            height: auto;
+            width: 100%;
+        }
+        .oneServTextH {
+            display: inline-block;
+            font-size: 3.6rem;
+            margin-bottom: 3rem;
+        }
+        .oneServTextP {
+            display: inline-block;
+            font-size: 2.4rem;
+        }
+    }
+    .oneServAction {
+        height: 100%;
+        width: 31rem;
+        @media screen and (max-width: 54*8px) {
+            height: auto;
+            width: 100%;
+            margin-top: 5rem;
+        }
+        .oneServActionPrice {
+            font-size: 3.6rem;
+            margin-bottom: 3rem;
+            display: inline-block;
+        }
+    }
+}
+
+.oneRevHead {
+    height: 9.2rem;
+    width: 45rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+    img {
+        height: 100%;
+    }
+    
+    .oneRevHeadText {
+        height: 100%;
+        width: 32rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-bottom: 9rem;
+        .oneRevHeadTextRate {
+            font-weight: 500;
+            font-size: 6rem;
+        }
+        .oneRevHeadTextDesc {
+            font-weight: 500;
+            font-size: 3rem;
+        }
+    }
+
+}
+
+.oneRevOne {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .oneRevOneHead {
+        height: 11rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 54*8px) {
+            flex-direction: column;
+            margin-bottom: 10rem;
+        }
+        .oneRevOneHeadAuthor {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            img {
+                height: 100%;
+                object-fit: contain;
+                justify-self: start;
+                margin-right: 5.8rem;
+            }
+            .oneRevOneHeadAuthorName {
+                font-size: 3.6rem;
+                font-weight: 600;
+                margin-bottom: 0.4rem;
+            }
+        }
+        .oneRevOneHeadRate {
+           // выделено отдельно, см. ниже 
+        }
+    }
+    .oneRevOneText {
+        margin-left: 16.8rem;
+        margin-top: 2rem;
+        @media screen and (max-width: 54*8px) {
+            margin-left: 0em;
+        }
+        span {
+            font-size: 3rem;
+        }
+    }
+}
+
+.myReviewBottomRateStars,  .oneRevOneHeadRate{
+    height: 2.9rem;
+    width: 18.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 54*8px) {
+        align-self: start;
+        margin-left: 16.8rem;
+        margin-top: 2rem;
+        
+    }
+    
+    button, img {
+        height: 100%;
+    }
+
+}
+
+.myReview {
+    input {
+        width: 100%;
+        height: 22.8rem;
+    }
+
+    label {
+        font-weight: 600;
+        font-size: 3.6rem;
+        margin-bottom: 5rem;
+        display: inline-block;
+        @media screen and (max-width: 54*8px) {
+            font-size: 3rem;
+        }
+    }
+
+    .myReviewBottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 54*8px) {
+            flex-direction: column;
+            align-items: start;
+            
+            .redButton {
+                margin-top: 5rem;
+            }
+            .myReviewBottomRate {
+                margin: 0;
+                .myReviewBottomRateStars {
+                    margin: 0.7rem 0 0 0;
+                }
+            }
+        }
+    }
+    .myReviewBottomRate {
+        width: 38.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        label {
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+        }
+    }
+}

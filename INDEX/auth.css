@@ -325,97 +325,33 @@ footer .mainContainer .social img {
   }
 }
 
-button {
-  cursor: pointer;
+@media screen and (max-width: 432px) {
+  footer {
+    position: fixed;
+    margin-bottom: 5vw;
+    bottom: 0;
+  }
 }
 
-.mainCols {
-  width: 100%;
-  grid-column-gap: 12rem;
-  grid-template-columns: repeat(auto-fill, minmax(50rem, 65rem));
-}
-
-.col {
-  display: block;
-  height: auto;
-}
-
-.recOne {
-  display: block;
+form.baseBlock {
+  width: 59.3rem;
   flex-direction: column;
 }
-.recOne span {
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-.recOne .rowName {
-  font-weight: 600;
+@media screen and (max-width: 432px) {
+  form.baseBlock {
+    width: 90vw;
+  }
 }
 
-.accInfo, .specProfile {
-  flex-direction: row;
-  margin-bottom: 5rem;
+.authBottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.accInfo img, .specProfile img {
-  width: 15rem;
-  height: 15rem;
-  margin-right: 5rem;
-}
-.accInfo span, .specProfile span {
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-.accInfo button, .specProfile button {
-  display: inline;
-  margin-right: 2rem;
-}
-
-.specProfile button {
-  margin-top: 1.6rem;
-}
-.specProfile .imgZone {
-  width: 15rem;
-  height: 15rem;
-  margin-right: 5rem;
-  position: relative;
-}
-.specProfile .imgZone img {
-  position: relative;
-  height: 10rem;
-  width: 10rem;
-  margin-left: 5rem;
-  margin-bottom: 5rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.specProfile .imgZone img.create {
-  height: 4rem;
-  width: 4rem;
-  margin-left: 10rem;
-  margin-bottom: 10rem;
-}
-.specProfile .imgZone div {
-  position: relative;
-  display: block;
-  height: 10rem;
-  width: 10rem;
-  border-radius: 5rem;
-  margin-left: 0rem;
-  margin-top: -10rem;
-  background-color: #8b424c;
-}
-.specProfile .imgZone div img {
-  height: 5rem;
-  margin-left: 0rem;
-  margin-bottom: 0rem;
-  margin-top: 2.23rem;
-  margin-right: 8rem;
-}
-
-.create {
-  text-align: start;
-}
-.create button {
-  text-align: start;
-  margin-top: 4rem;
-}/*# sourceMappingURL=profile.css.map */
+.authBottom a {
+  font-size: 2.5rem;
+  text-align: right;
+  margin-right: 3rem;
+  cursor: pointer;
+}/*# sourceMappingURL=auth.css.map */

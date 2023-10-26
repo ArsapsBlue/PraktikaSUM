@@ -1,0 +1,42 @@
+@import '_other.scss';
+@import '_mainsource.scss';
+@import '_standartColsPage.scss';
+
+.serv, .wind {
+    flex-direction: column;
+
+}
+
+form {
+    display: block;
+    button {
+            text-align: right;
+            margin-bottom: 1rem;
+    }
+}
+
+.imgZone.create {
+    width: 5rem;
+    img {
+        margin: 5.5rem auto 4.5rem !important;
+    }
+}
+
+.create {
+    .textBox {
+        margin: 0rem !important;
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 47rem;
+        button {
+            margin: 0rem !important;
+            text-align: center !important;
+            span {
+                margin: 0rem !important;
+                text-align: center !important;
+            }
+        }
+    }
+}

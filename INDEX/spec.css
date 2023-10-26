@@ -418,4 +418,40 @@ button {
 .create button {
   text-align: start;
   margin-top: 4rem;
-}/*# sourceMappingURL=profile.css.map */
+}
+
+.serv, .wind {
+  flex-direction: column;
+}
+
+form {
+  display: block;
+}
+form button {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.imgZone.create {
+  width: 5rem;
+}
+.imgZone.create img {
+  margin: 5.5rem auto 4.5rem !important;
+}
+
+.create .textBox {
+  margin: 0rem !important;
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 47rem;
+}
+.create .textBox button {
+  margin: 0rem !important;
+  text-align: center !important;
+}
+.create .textBox button span {
+  margin: 0rem !important;
+  text-align: center !important;
+}/*# sourceMappingURL=spec.css.map */
